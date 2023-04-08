@@ -16,6 +16,14 @@ public class FilesInOut {
             //Creates file to be inputed and outputed
             File inputFile = new File("C:\\Users\\escar\\Downloads\\CSCUT4Practical2-main\\CSCUT4Practical2-main\\inputm.txt");
             File outputFile = new File("C:\\Users\\escar\\Downloads\\CSCUT4Practical2-main\\CSCUT4Practical2-main\\outputm.txt");
+            //added a try catch statement to handle if the filepath or file cannot be found
+         try {
+              
+
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
     } // main
 
 } // FilesInOut
