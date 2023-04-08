@@ -20,6 +20,13 @@ public class FilesInOut {
          try {
              Scanner scanner = new Scanner(inputFile);//scanner for reading the file or filepath
              PrintWriter writer = new PrintWriter(outputFile); //this is the file or filepath that will contain the output of the program 
+             //Continuously check the data in input file with the use of a while loop
+              while (scanner.hasNextLine()) {
+                    String line = scanner.nextLine();
+                    String[] words = line.split(" ");
+                    StringBuilder formattedName = new StringBuilder();
+                    String formattedDate = "";
+
             
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
